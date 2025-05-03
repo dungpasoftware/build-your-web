@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Wix_Madefor_Display, Wix_Madefor_Text } from "next/font/google";
 import "./globals.css";
 import AnimatedCursor from "./components/animations/AnimatedCursor";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const wixMadeforDisplay = Wix_Madefor_Display({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-wix-madefor-display",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const wixMadeforText = Wix_Madefor_Text({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  variable: "--font-wix-madefor-text",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${wixMadeforDisplay.variable} ${wixMadeforText.variable} antialiased`}
       >
         <AnimatedCursor />
         {children}
