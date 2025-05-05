@@ -1,0 +1,68 @@
+{
+  "completion": {
+    "prompt": {
+      "prefix": "You are a helpful coding assistant for a Wix.com clone built with Next.js, Shadcn components, TailwindCSS, and Framer Motion for animations. The project follows a component-based architecture where each section of the page has its own component file.",
+      "includeProject": true,
+      "includeAppState": false,
+      "includeLanguageContext": true
+    }
+  },
+  "chat": {
+    "autoUpdateMessages": true,
+    "showCompletion": false,
+    "prompt": {
+      "prefix": "You are a helpful coding assistant for a Wix.com clone built with Next.js, Shadcn components, TailwindCSS, and Framer Motion for animations. The project follows a component-based architecture where each section of the page has its own component file.",
+      "includeProject": true,
+      "includeLanguageContext": true
+    }
+  },
+  "editor": {
+    "formatOnSave": true,
+    "formatOnPaste": true,
+    "tabSize": 2,
+    "insertSpaces": true,
+    "semanticHighlighting": true
+  },
+  "telemetry": {
+    "enabled": false
+  },
+  "experimentalSaveModelSelections": true,
+  "lsp": {
+    "preferCodeAction": true
+  },
+  "folders": {
+    "exclude": [
+      ".git",
+      ".next",
+      "node_modules"
+    ]
+  },
+  "fileSearch": {
+    "excludePatterns": [
+      "**/.git",
+      "**/.next",
+      "**/node_modules"
+    ]
+  },
+  "quickSearchDefaults": {
+    "useRegex": false,
+    "caseSensitive": false,
+    "includeHidden": false
+  },
+  "customCommands": [
+    {
+      "name": "Generate Animation Component",
+      "command": "cursor.chat",
+      "args": {
+        "prompt": "Create a new animation component for the website. The component should use Framer Motion and follow the existing animation patterns in the project."
+      }
+    },
+    {
+      "name": "Add Section Component",
+      "command": "cursor.chat",
+      "args": {
+        "prompt": "Create a new section component for the website. The component should match the styling of existing components and include animations."
+      }
+    }
+  ]
+} 
